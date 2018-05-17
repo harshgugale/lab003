@@ -86,7 +86,7 @@ class BaseSoC(SoCCore):
 
         self.submodules.led  = PWM()
 
-        self.comb+=led1.eq(self.submodules.led.pwm_out)
+        self.comb+=led1.eq(self.led.pwm_out)
 
 
 soc = BaseSoC(platform)
